@@ -25,6 +25,20 @@ namespace EzeCarVentures.Models
         {
             base.OnModelCreating(modelBuilder);
 
+
+            // Configure decimal properties
+            modelBuilder.Entity<Car>()
+                .Property(c => c.Price)
+                .HasPrecision(18, 2); // Adjust precision and scale as needed
+
+            modelBuilder.Entity<Order>()
+                .Property(o => o.OrderTotal)
+                .HasPrecision(18, 2); // Adjust precision and scale as needed
+
+            modelBuilder.Entity<OrderDetail>()
+                .Property(od => od.Price)
+                .HasPrecision(18, 2); // Adjust precision and scale as needed
+
             //seed Brand
             modelBuilder.Entity<Brand>().HasData(new Brand { BrandId = 1, BrandName = "Toyota Camry",Description="Beauty" });
             modelBuilder.Entity<Brand>().HasData(new Brand { BrandId = 2, BrandName = "BMW",Description="Class" });

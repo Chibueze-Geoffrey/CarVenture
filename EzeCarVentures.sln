@@ -17,8 +17,8 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{59FBFB9D-C56E-43AE-84BE-A51C8780B266}.Debug|Any CPU.ActiveCfg = Release|Any CPU
-		{59FBFB9D-C56E-43AE-84BE-A51C8780B266}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{59FBFB9D-C56E-43AE-84BE-A51C8780B266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FBFB9D-C56E-43AE-84BE-A51C8780B266}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59FBFB9D-C56E-43AE-84BE-A51C8780B266}.Debug|AnyCpu.ActiveCfg = Debug|x86
 		{59FBFB9D-C56E-43AE-84BE-A51C8780B266}.Debug|AnyCpu.Build.0 = Debug|x86
 		{59FBFB9D-C56E-43AE-84BE-A51C8780B266}.Debug|x64.ActiveCfg = Debug|x64

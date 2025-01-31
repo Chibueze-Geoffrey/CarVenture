@@ -11,6 +11,6 @@ namespace EzeCarVentures.Models
         {
             _context = appDbContext;
         }
-        public IEnumerable<Brand> AllBrand => _context.Brands.ToList();
+        public IEnumerable<Brand> AllBrand => _context.Brands;
     }
 }

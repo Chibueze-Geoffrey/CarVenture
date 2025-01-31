@@ -13,14 +13,13 @@ namespace EzeCarVentures.Models
         public decimal Price { get; set; }
         public string ShortDescription { get; set; }
         public string LongDescription { get; set; }
-        public string ShortName { get; set; }
+        public string ShortName { get; set; } 
         public string ImageUrl { get; set; }
 
         // Foreign Key for Brand
         public int BrandId { get; set; }
-        public string BrandName { get; set; }
+        public string BrandName { get; set; } 
         public virtual Brand Brand { get; set; }
-        public DateTime Accessed { get; set; } = DateTime.UtcNow;
     }
 
 }
