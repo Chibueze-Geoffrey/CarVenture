@@ -1,4 +1,5 @@
 using EzeCarVentures.Models;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using System.Threading.Tasks;
 
 namespace EzeCarVentures
@@ -39,6 +41,7 @@ namespace EzeCarVentures
 	 services.AddScoped<IOrderRepo, OrderRepo>();
             services.AddScoped<ShoppingCart>(sp => ShoppingCart.GetCart(sp));
 
+           
             services.AddHttpContextAccessor();
             services.AddSession();
             services.AddControllersWithViews();
