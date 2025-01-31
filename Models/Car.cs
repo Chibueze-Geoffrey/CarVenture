@@ -1,9 +1,13 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EzeCarVentures.Models
 {
     public class Car
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int CarId { get; set; }
         public string CarName { get; set; }
         public decimal Price { get; set; }
@@ -15,8 +19,8 @@ namespace EzeCarVentures.Models
         // Foreign Key for Brand
         public int BrandId { get; set; }
         public string BrandName { get; set; }
-        public Brand Brand { get; set; }  // Navigation Property
-
+        public virtual Brand Brand { get; set; }
         public DateTime Accessed { get; set; } = DateTime.UtcNow;
     }
+
 }
