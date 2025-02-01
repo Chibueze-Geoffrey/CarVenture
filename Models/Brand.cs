@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace EzeCarVentures.Models
 {
@@ -7,5 +8,6 @@ namespace EzeCarVentures.Models
          public int BrandId { get; set; }
         public string BrandName { get; set; }
         public string Description { get; set; }
+        public DateTime Accessed {  get; set; } = DateTime.Now;
     }
 }

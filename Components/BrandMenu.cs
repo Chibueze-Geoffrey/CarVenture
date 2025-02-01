@@ -17,7 +17,7 @@ namespace BethanysPieShop.Components
 
         public IViewComponentResult Invoke()
         {
-            var brands = _brandRepo.AllBrand.OrderBy(c => c.BrandName);
+            var brands = _brandRepo.AllBrand.OrderBy(c => c.BrandName).ToList();
             return View(brands);
         }
     }
