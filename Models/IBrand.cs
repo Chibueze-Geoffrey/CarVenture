@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace EzeCarVentures.Models
 {
     public interface IBrand
     {
-        IEnumerable<Brand> AllBrand { get; }
+        IQueryable<Brand> AllBrand { get; }
     }
 }
