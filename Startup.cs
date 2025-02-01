@@ -29,7 +29,8 @@ namespace EzeCarVentures
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options =>
-               options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+               options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+        sqlOptions => sqlOptions.EnableRetryOnFailure()));
 
             //     services.AddDbContext<AppDbContext>(options =>
             //options.UseSqlite("Data Source=CarVentures.db"));
